@@ -2,7 +2,7 @@ function showToast() {
     const toast = document.getElementById("toast");
     toast.classList.add("show");
     window.scrollTo({ top: 0, behavior: "smooth" });
-    setTimeout(() => toast.classList.remove("show"), 1000);
+    setTimeout(() => toast.classList.remove("show"), 3000);
 }
 
 function clearErrors() {
