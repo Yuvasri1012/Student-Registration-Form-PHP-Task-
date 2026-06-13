@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="toast">
+      <span class="toast-icon">✓</span>
+      <span class="toast-text">Student registered successfully!</span>
+    </div>
+
+    <div class="container">
+      <div class="form-header">
+        <h2>Student Registration</h2>
+        <p>Fill in the details below to register</p>
+      </div>
+
+      <form id="studentForm">
+        <div class="field" id="field-name">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            autocomplete="off"
+          />
+          <span class="error-msg">Name is required</span>
+        </div>
+
+        <div class="field" id="field-email">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            autocomplete="off"
+          />
+          <span class="error-msg">Valid email is required</span>
+        </div>
+
+        <div class="field" id="field-mobile">
+          <label for="mobile">Mobile Number</label>
+          <input
+            type="text"
+            id="mobile"
+            placeholder="10-digit mobile number"
+            maxlength="10"
+            autocomplete="off"
+          />
+          <span class="error-msg">Enter a valid 10-digit number</span>
+        </div>
+
+        <button type="submit">Register Student</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
